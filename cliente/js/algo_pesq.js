@@ -50,7 +50,7 @@ setTimeout(()=>{
 
 
 function aparece_1(){
-    const box = document.getElementById(`box${fase}`);
+    let box = document.getElementById(`box${fase}`);
     box.style.visibility= "visible";
     box.style.animation = "aparece 1s ease 1.7s";
     box.style.animationFillMode= "forwards";
@@ -112,7 +112,7 @@ function escolheu(escolha){
         pergunta_atual.style.display="block"
         
         typewriter(pergunta_atual)
-        
+        aparece_1()
         
         }
     }
