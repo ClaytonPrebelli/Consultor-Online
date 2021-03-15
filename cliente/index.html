@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    
+
     <title>Consultor de Negócios Online</title>
 </head>
+
 <body>
-   <header>
-       <nav class="nav"><img src="assets/img/chris.png" id="chris" alt="chris"><h1 class="fala_chris" id="fala_chris">Oi! Eu sou a Chris. Assistente Virtual da Christe Telecom!</h1><h1 class="fala_chris1" id="fala_chris1">Pode me ajudar a montar o pacote perfeito para você?</h1><h2 class="perg_chris1" id="perg_chris1">Para eu te conhecer melhor. O que você prefere fazer nas horas vagas?</h2></nav>
-   </header>   
-   <main>
-    <section class="body">
-        <section id="box1">
-            <div class="card" id="tv1">
+    <header>
+        <nav class="nav"><img src="assets/img/chris.png" id="chris" alt="chris">
+            <h1 class="fala_chris" id="fala_chris">Oi! Eu sou a Chris. Assistente Virtual da Christe Telecom!</h1>
+            <h1 class="fala_chris1" id="fala_chris1">Pode me ajudar a montar o pacote perfeito para você?</h1>
+            <h2 class="perg_chris1" id="perg_chris1">Para eu te conhecer melhor. O que você prefere fazer nas horas vagas?</h2>
+            <h2 class="perg_chris2" id="perg_chris2">Que legal! Me diz agora o que você acha mais importante?</h2>
+        </nav>
+    </header>
+    <main>
+        <section class="body">
+            <!--Pergunta 1-->
+            <section id="box1" class="box1">
+                <div class="card" id="tv1" onclick="clicou('tv1')">
+                    <h5 class="frase_card" id="frase_tv1">Aquela preguiça no sofá e a TV ligada é a melhor definição de
+                        dia!</h5>
+                    <button class="escolha" id="btn_tv1" onclick="escolheu('tv')">Escolher</button>
+                </div>
+                <div class="card" id="chip1" onclick="clicou('chip1')">
+                    <h5 class="frase_card" id="frase_chip1">Adoro sair com os amigos. Tirar várias fotos como memória!
+                    </h5>
+                    <button class="escolha" id="btn_chip1" onclick="escolheu('chip')">Escolher</button>
+                </div>
+                <div class="card" id="virtua1" onclick="clicou('virtua1')">
+                    <h5 class="frase_card" id="frase_virtua1">Adoro jogar e me divertir online. Meus dispositivos são
+                        meus melhores amigos </h5>
+                    <button class="escolha" id="btn_virtua1" onclick="escolheu('virtua')">Escolher</button>
+                </div>
+                <div class="card" id="geral1" onclick="clicou('geral1')">
+                    <h5 class="frase_card" id="frase_geral1">Sou bem eclético e posso me divertir de várias maneiras!
+                    </h5>
+                    <button class="escolha" id="btn_geral1" onclick="escolheu('geral')">Escolher</button>
+                </div>
+            </section>
 
-            </div>
-            <div class="card" id="chip1">
 
-            </div>
-            <div class="card" id="virtua1">
 
-            </div>
-            <div class="card" id="geral1">
 
-            </div>
+
+
         </section>
 
-    </section>
+    </main>
 
-   </main>
-
-   <footer ><div class="footer">
-      <p class="escrita_footer">Desenvolvido por <span class="destaque">Henrique Castro</span> e <span class="destaque">Clayton Prebelli</span></p></footer>
-   <script type="text/javascript" src="js/algo_pesq.js"></script>
+    <footer>
+        <div class="footer">
+            <p class="escrita_footer">Desenvolvido por <span class="destaque">Henrique Castro</span> e <span
+                    class="destaque">Clayton Prebelli</span></p>
+    </footer>
+    <script type="text/javascript" src="js/algo_pesq.js"></script>
 </body>
+
 </html>

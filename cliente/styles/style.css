@@ -78,6 +78,25 @@ width: 80rem;
             opacity: 0;
         }
     }
+    .perg_chris2{
+        width: 80rem;
+            position: relative;
+            margin: auto;
+            margin-left: 10px;
+            display: none;
+        }
+        .perg_chris2::after{
+            content:'|';
+            margin-left: 5px;
+            opacity: 2;
+            animation: pisca .7s infinite;
+        }
+        @keyframes pisca{
+            0%{ opacity: 1;}
+            50%{
+                opacity: 0;
+            }
+        }
 
 .body{
     background-image:  linear-gradient(rgba(236, 14, 14, 0.692),rgba(90, 0, 0, 0.733)),url("https://images.pexels.com/photos/4065617/pexels-photo-4065617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") ;
@@ -91,20 +110,19 @@ width: 80rem;
     position: fixed;
     z-index: 1;
     overflow-y: hidden;
-    
 }
 
 
 
-#box1{
+.box1{
     visibility:hidden;
     background-image: linear-gradient(rgba(255, 254, 254, 0.199),rgba(204, 204, 204, 0.199));
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    height: 85%;
+    width: 0%;
+    height: 0%;
     position: relative;
     margin: 25px auto;
     border-radius: 6px;
@@ -112,6 +130,8 @@ width: 80rem;
     justify-content: space-around;
     align-content: space-around;
 }
+
+
 .card{
     background-image: linear-gradient(rgb(255, 254, 254),rgb(167, 166, 166));
     background-repeat: no-repeat;
@@ -122,10 +142,15 @@ width: 80rem;
     margin:auto;
     opacity: 1;
     box-shadow: 2px 2px 5px 1px rgb(56, 56, 56);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    
 }
 @media screen and (min-width: 800px){
     .body{
-        background-image:  linear-gradient(rgba(236, 14, 14, 0.692),rgba(90, 0, 0, 0.733)),url("/cliente/assets/img/bg_body_pc.jpg") ;
+        background-image:  linear-gradient(rgba(236, 14, 14, 0.692),rgba(90, 0, 0, 0.733)),url("/assets/img/bg_body_pc.jpg") ;
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
@@ -136,9 +161,6 @@ width: 80rem;
         position: fixed;
         z-index: 1;
         overflow-y: hidden;
-    }
-    .box{
-        margin: 5px auto;
     }
 }
 .footer{
@@ -172,3 +194,67 @@ dir{
 .destaque{
     font-weight: bold;
 }
+#tv1{
+  background-image: url("/assets/img/vertv.jpg");  
+  background-size:cover;
+  cursor: pointer;
+}
+#virtua1{
+    background-image: url("/assets/img/jogar.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #chip1{
+    background-image: url("/assets/img/sair.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #geral1{
+    background-image: url("/assets/img/varios.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  .card:hover{
+    box-shadow: 2px 2px 5px 1px rgb(255, 255, 255);
+  }
+  .frase_card{
+    margin: 5px 12px;
+    font-size: 13pt;
+    text-align: center;
+    display: none;
+}
+.escolha{   
+   
+   align-self: center;
+   justify-items: center;
+   border-radius: 8px;
+   font-weight: bold;
+   background-image: linear-gradient(rgba(236, 14, 14, 0.829),rgba(90, 0, 0, 0.836));
+   color:white;
+   width: 100%;
+   height: 15%;
+   outline: none;
+   bottom: 0;
+   position: relative;
+   align-self:flex-end;
+   display: none;
+}
+  @keyframes virar{
+      0%{ height: 30%;}
+      100%{ height: 0%;}
+  }
+  
+  @keyframes desvirar{
+      0%{ height: 0%;  }
+      100% { height: 30%; background-image:none; background-color:  rgb(185, 185, 185);}
+  }
+
+  @keyframes aparece{
+    0%{ width: 0%; height: 0%;}
+    100%{width: 90%; height: 85%;margin: 25px auto;}
+} 
+
+@keyframes desaparece{
+    0%{ width: 90%; height: 85%; margin: 25px auto;}
+    100%{width: 0%; height: 0%; display: none; visibility: hidden;}
+} 
