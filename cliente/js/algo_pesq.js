@@ -104,6 +104,7 @@ function escolheu(escolha){
     }
 
     function prox_fase(fase){
+        
         if(fase<=6){
         const box_atual = `box${fase}`
         pergunta += 1
