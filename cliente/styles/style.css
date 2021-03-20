@@ -97,14 +97,14 @@ width: 80rem;
                 opacity: 0;
             }
         }
-        .perg_chris3{
+.perg_chris3{
             width: 80rem;
                 position: relative;
                 margin: auto;
                 margin-left: 10px;
                 display: none;
             }
-            .perg_chris2::after{
+            .perg_chris3::after{
                 content:'|';
                 margin-left: 5px;
                 opacity: 2;
@@ -116,7 +116,26 @@ width: 80rem;
                     opacity: 0;
                 }
             }
-
+            .perg_chris4{
+                width: 80rem;
+                    position: relative;
+                    margin: auto;
+                    margin-left: 10px;
+                    display: none;
+                }
+                .perg_chris4::after{
+                    content:'|';
+                    margin-left: 5px;
+                    opacity: 2;
+                    animation: pisca .7s infinite;
+                }
+                @keyframes pisca{
+                    0%{ opacity: 1;}
+                    50%{
+                        opacity: 0;
+                    }
+                }
+    
 .body{
     background-image:  linear-gradient(rgba(236, 14, 14, 0.692),rgba(90, 0, 0, 0.733)),url("https://images.pexels.com/photos/4065617/pexels-photo-4065617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") ;
     background-repeat: no-repeat;
@@ -133,7 +152,7 @@ width: 80rem;
 
 
 
-.box1, .box2{
+.box1, .box2, .box3, .box4{
     visibility:hidden;
     background-image: linear-gradient(rgba(255, 254, 254, 0.199),rgba(204, 204, 204, 0.199));
     background-repeat: no-repeat;
@@ -223,6 +242,16 @@ dir{
     background-size:cover;
     cursor: pointer;
   }
+  #tv3{
+    background-image: url("/assets/img/tv3.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #tv4{
+    background-image: url("/assets/img/tv4.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
 #virtua1{
     background-image: url("/assets/img/jogar.jpg");  
     background-size:cover;
@@ -230,6 +259,16 @@ dir{
   }
   #virtua2{
     background-image: url("/assets/img/virtua2.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #virtua3{
+    background-image: url("/assets/img/virtua3.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #virtua4{
+    background-image: url("/assets/img/virtua4.jpg");  
     background-size:cover;
     cursor: pointer;
   }
@@ -243,6 +282,16 @@ dir{
     background-size:cover;
     cursor: pointer;
   }
+  #chip3{
+    background-image: url("/assets/img/chip3.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #chip4{
+    background-image: url("/assets/img/chip4.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
   #geral1{
     background-image: url("/assets/img/varios.jpg");  
     background-size:cover;
@@ -250,6 +299,16 @@ dir{
   }
   #geral2{
     background-image: url("/assets/img/geral2.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #geral3{
+    background-image: url("/assets/img/geral3.jpg");  
+    background-size:cover;
+    cursor: pointer;
+  }
+  #geral4{
+    background-image: url("/assets/img/geral4.jpg");  
     background-size:cover;
     cursor: pointer;
   }
