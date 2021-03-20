@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 
     <title>Consultor de Negócios Online</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav"><img src="assets/img/chris.png" id="chris" alt="chris">
+        <nav class="nav"><img src="/assets/img/chris.png" id="chris" alt="chris">
             <h1 class="fala_chris" id="fala_chris">Oi! Eu sou a Chris. Assistente Virtual da Christe Telecom!</h1>
             <h1 class="fala_chris1" id="fala_chris1">Pode me ajudar a montar o pacote perfeito para você?</h1>
             <h2 class="perg_chris1" id="perg_chris1">Para eu te conhecer melhor. O que você prefere fazer nas horas vagas?</h2>
             <h2 class="perg_chris2" id="perg_chris2">Que legal! Me diz agora o que você acha mais importante?</h2>
             <h2 class="perg_chris3" id="perg_chris3">Obrigado! E qual situação você acha mais irritante?</h2>
             <h2 class="perg_chris4" id="perg_chris4">Concordo! E se você ganhasse R$5.000 hoje, o que compraria?</h2>
+            <h2 class="perg_chris5" id="perg_chris5">Legal! Se pudesse fazer um upgrade em seu pacote. Qual produto escolheria?</h2>
         </nav>
     </header>
     <main>
@@ -109,7 +110,28 @@
                     <button class="escolha" id="btn_chip4" onclick="escolheu('chip')">Escolher</button>
                 </div>
             </section>
-
+            
+            <!--Pergunta 5-->
+            <section id="box5" class="box5">
+                <div class="card" id="tv5" onclick="clicou('tv5')">
+                    <h5 class="frase_card" id="frase_tv5">Colocaria mais canais e interatividade na TV!</h5>
+                    <button class="escolha" id="btn_tv5" onclick="escolheu('tv')">Escolher</button>
+                </div>
+                <div class="card" id="geral5" onclick="clicou('geral5')">
+                    <h5 class="frase_card" id="frase_geral5">Aumentaria todos os produtos. Utilizo todos sem exceção!
+                    </h5>
+                    <button class="escolha" id="btn_geral5" onclick="escolheu('geral')">Escolher</button>
+                </div>
+                <div class="card" id="chip5" onclick="clicou('chip5')">
+                    <h5 class="frase_card" id="frase_chip5">Preciso urgentemente de mais franquia e recursos no meu celular!</h5>
+                    <button class="escolha" id="btn_chip5" onclick="escolheu('chip')">Escolher</button>
+                </div>
+                <div class="card" id="virtua5" onclick="clicou('virtua5')">
+                    <h5 class="frase_card" id="frase_virtua5">Com certeza, velocidade na internet! Tudo hoje requer muita velocidade!
+                    </h5>
+                    <button class="escolha" id="btn_virtua5" onclick="escolheu('virtua')">Escolher</button>
+                </div>
+            </section>
 
 
 
@@ -124,7 +146,7 @@
             <p class="escrita_footer">Desenvolvido por <span class="destaque">Henrique Castro</span> e <span
                     class="destaque">Clayton Prebelli</span></p>
     </footer>
-    <script type="text/javascript" src="js/algo_pesq.js"></script>
+    <script type="text/javascript" src="/js/algo_pesq.js"></script>
 </body>
 
 </html>
